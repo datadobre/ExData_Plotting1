@@ -45,6 +45,8 @@ if (memory.size() < size.estimate) {
   rm(data)
   
   # create the 2nd figure
+  options(scipen = 999)
+  Sys.setlocale("LC_ALL","English")
   
   png("plot2.png", width = 480, height = 480, units = "px",pointsize = 12, bg = "white")
   

@@ -44,6 +44,9 @@ if (memory.size() < size.estimate) {
   
   rm(data)
   
+  options(scipen = 999)
+  Sys.setlocale("LC_ALL","English")
+  
   # Create the 4th figure:
   png("plot4.png", width = 480, height = 480, units = "px",pointsize = 12, bg = "white")
   par(mfcol = c(2,2))
